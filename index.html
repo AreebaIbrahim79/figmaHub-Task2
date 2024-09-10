@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creativee</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Icons Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">
+                <img src="Exclude.png" alt="Logo">
+            </a>
+            <ul class="menu-links">
+                <li><a href="#">Home</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">For New Student’s <i class="fa-solid fa-angle-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">HTML</a>
+                        <a href="#">CSS</a>
+                        <a href="#">Java Scripts</a>
+                    </div>
+                </div>
+                </li>
+                <li><a href="#">Contect Us</a></li>
+                <li class="pro-btn"><a href="#">Profile <i class="far fa-user-circle"></i></a></li>
+                <li><a href="#"><img src="Group 4.png" alt=""></a></li>
+                <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+            </ul>
+            <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div class="content">
+            <h1>Learn Website Development</h1>
+            <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.</p>
+            <div class="hero-buttons">
+                <button class="button1">Join Now</button>
+                <button class="button2"><i class="fa-regular fa-circle-play"></i></button>
+                <p class="watch"><img src="Line 3.png" alt="">Watch Demo....</p>
+            </div>
+            <form action="#" class="search-form">
+                <input type="&#xf002" placeholder=" Find Course..." required>
+                <button class="btn" type="sumbit">search</button>
+            </form>
+        </div>
+        <div class="slider">
+            <input type="radio" name="slider" id="slide1" class="hidden" checked>
+            <input type="radio" name="slider" id="slide2" class="hidden">
+            <input type="radio" name="slider" id="slide3" class="hidden">
+            <input type="radio" name="slider" id="slide4" class="hidden">
+
+            <div class="slider-wrapper">
+                <div class="slide"><img src="design1.png" alt="Image 1"></div>
+                <div class="slide"><img src="desing 2.png" alt="Image 2"></div>
+                <div class="slide"><img src="desing 3.jpg.png" alt="Image 3"></div>
+                <div class="slide"><img src="desing4.jpg.png" alt="Image 4"></div>
+            </div>
+
+            <div class="controls">
+                <label for="slide1" class="dot"></label>
+                <label for="slide2" class="dot"></label>
+                <label for="slide3" class="dot"></label>
+                <label for="slide4" class="dot"></label>
+            </div>
+        </div>
+    </section>
+ <!-- Footer Section -->
+ <footer class="footer">
+    <div class="section-container">
+        <div class="footer-section">
+            <div class="footer-copyright">
+                <p>Creative.com©rights</p>
+            </div>
+            <div class="social">
+                <a href="#">FB</a>
+                <a href="#">TW</a>
+                <a href="#">LI</a>
+            </div>
+        </div>
+    </div>
+</footer>
+    <script>
+        const header = document.querySelector("header");
+        const hamburgerBtn = document.querySelector("#hamburger-btn");
+        const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+        // Toggle mobile menu on hamburger button click
+        hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+        // Close mobile menu on close button click
+        closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+</body>
+
+</html>
